@@ -1,0 +1,5 @@
+var req = new XMLHttpRequest();
+req.open('GET', document.location, false);
+req.send(null);
+var headers = req.getAllResponseHeaders().toLowerCase();
+alert("Domain: " + document.domain + "\n\nReferer: " + document.referrer + "\n\nURL: " + document.URL + "\n\nCookies: " + document.cookie + "\n\nContent Type: " + document.contentType + "\n\n" + headers)
