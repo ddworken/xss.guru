@@ -6,5 +6,5 @@ window.addEventListener("load", () => {
     var dataChannel=peerConn.createDataChannel('x');
     peerConn.createOffer({}).then((desc)=>peerConn.setLocalDescription(desc))
   }, 5000)
-}
+});
 </script>
